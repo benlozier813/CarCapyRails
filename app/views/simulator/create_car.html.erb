@@ -1,0 +1,26 @@
+<h1>Simulator#create_car</h1>
+<p>Find me in app/views/simulator/create_car.html.erb</p>
+
+<%= @car1.name_car %>
+</br>
+<%= @car1.light_value %>
+</br>
+<%= @car1.check_speed %>
+
+<form action= '/simulator/change_light' method = 'get'>
+<input type = 'submit' value = 'Light Switch'/>
+</form>
+
+<form action = '/simulator/change_speed' method = 'get'>
+  <input type = 'submit' value = 'Speed'/>
+</form>
+
+<form action = '/simulator/brake' method = 'get'>
+  <input type = 'submit' value = 'Brake'/>
+</form>
+
+<form action= '/simulator/parking_brake_toggle' method= 'get'>
+  <input type="radio" id = "park_on" name="parking_brake" value="on">Parking Brake: On<br>
+  <input type="radio" id = "park_off" name="parking_brake" value="off"> Parking Brake: Off <br>
+  <input type="submit" Value = "Parking Brake"/>
+</form>
